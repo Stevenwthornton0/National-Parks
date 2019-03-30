@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Nearby National Parks</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  </head>
+
+  <body>
+    
+    <header><h1>National Parks in your area!</h1></header>
+
+    <form>
+      <p>Enter a location here:</p>
+      <input type="text" id="location" placeholder="e.g. Seattle">
+      <p>Number of results:</p>
+      <input type="number" id="resultAmount">
+      <input type="submit" value="Submit">
+    </form>
+      <p class="errorMessage"></p>
+
+    <section class="results hidden">
+      <h2>Parks Near You</h2>
+      <ul class="parks"></ul>
+    </section>
+
+
+    <script src="script.js"></script>
+  </body>
+
+</html>
